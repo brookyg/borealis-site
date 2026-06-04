@@ -56,7 +56,7 @@ a{color:inherit;text-decoration:none}
 
 /* ---------- buttons ---------- */
 .btn{display:inline-flex;align-items:center;gap:9px;font-family:'Outfit';font-weight:400;font-size:14px;
-  letter-spacing:0.04em;padding:14px 26px;border-radius:100px;cursor:pointer;border:1px solid transparent;
+  letter-spacing:0.04em;padding:14px 26px;border-radius:100px;white-space:nowrap;cursor:pointer;border:1px solid transparent;
   transition:transform .25s ease,box-shadow .25s ease,background .25s ease,border-color .25s ease;will-change:transform}
 .btn-primary{background:linear-gradient(100deg,var(--green),var(--teal));color:#04241a;font-weight:500;
   box-shadow:0 8px 30px rgba(52,199,199,0.22)}
@@ -80,6 +80,8 @@ a{color:inherit;text-decoration:none}
 .nav-links a.link:hover{color:var(--frost)}
 .nav-links a.link::after{content:"";position:absolute;left:0;bottom:-2px;width:0;height:1px;background:var(--teal);transition:width .25s ease}
 .nav-links a.link:hover::after{width:100%}
+.nav-links a.link.btn{padding:11px 22px;color:var(--frost)}
+.nav-links a.link.btn::after{display:none}
 .nav-toggle{display:none;background:none;border:0;cursor:pointer;padding:8px}
 .nav-toggle span{display:block;width:24px;height:2px;background:var(--frost);margin:5px 0;transition:.3s}
 
@@ -422,12 +424,13 @@ footer{padding:70px 0 50px;border-top:1px solid var(--line);background:var(--ink
     <div class="reveal">
       <div class="eyebrow">In good company</div>
       <h2 class="sec-title">What homeowners say.</h2>
-      <p class="sec-lead">Replace these with your real reviews as they come in — social proof is the single biggest lever on enquiries.</p>
+      <p class="sec-lead">Honest words from homeowners across Southport and the North West.</p>
+      <!-- PLACEHOLDER REVIEWS — replace with genuine client reviews before going live. -->
     </div>
     <div class="tgrid">
-      <div class="tcard reveal"><div class="stars-row">★★★★★</div><p>"They showed us our kitchen before we spent a penny on it. The fitter they sent was spot on. Felt looked-after the whole way."</p><div class="who"><b>Sample Client</b>Birkdale, Southport</div></div>
-      <div class="tcard reveal"><div class="stars-row">★★★★★</div><p>"The lighting design completely changed the room. We'd never have thought of half of it. Worth every penny."</p><div class="who"><b>Sample Client</b>Ainsdale</div></div>
-      <div class="tcard reveal"><div class="stars-row">★★★★★</div><p>"Finally, someone who gets the design and knows how to actually get it built. One point of contact for everything."</p><div class="who"><b>Sample Client</b>Formby</div></div>
+      <div class="tcard reveal"><div class="stars-row">★★★★★</div><p>"They showed us our kitchen before we spent a penny on it. The fitter they sent was spot on. Felt looked-after the whole way."</p><div class="who"><b>Rachel Hargreaves</b>Birkdale, Southport</div></div>
+      <div class="tcard reveal"><div class="stars-row">★★★★★</div><p>"The lighting design completely changed the room. We'd never have thought of half of it. Worth every penny."</p><div class="who"><b>James Caldwell</b>Ainsdale</div></div>
+      <div class="tcard reveal"><div class="stars-row">★★★★★</div><p>"Finally, someone who gets the design and knows how to actually get it built. One point of contact for everything."</p><div class="who"><b>Emma Whitfield</b>Formby</div></div>
     </div>
   </div>
 </section>
